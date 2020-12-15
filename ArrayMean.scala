@@ -1,6 +1,6 @@
 import scala.collection.mutable.ArrayBuffer
 
-object ArrayMedian {
+object ArrayMean {
 
   def main(args: Array[String]) { // Defines main driver code function just like in python
     val input = scala.io.StdIn.readLine("[+] How many values do you have? ") // Takes initial input on how many numbers the user wants
