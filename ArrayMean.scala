@@ -1,5 +1,6 @@
 import scala.collection.mutable.ArrayBuffer
 
+
 /**
  *
  * A scala object that allows you to calculate the mean,
