@@ -1,18 +1,33 @@
 import scala.collection.mutable.ArrayBuffer
 
+/**
+ *
+ * A scala object that allows you to calculate the mean,
+ * of an array supplied by a user's input.
+ *
+ */
+
 object ArrayMean {
+	
+	/**
+	 *
+	 * A built-in function that runs the code supplied,
+	 * inside of it, like seen in C++ & C.
+	 *
+	 */
 
-  def main(args: Array[String]) { // Defines main driver code function just like in python
-    val input = scala.io.StdIn.readLine("[+] How many values do you have? ") // Takes initial input on how many numbers the user wants
-    var array = ArrayBuffer[Float]() // Create array buffer object that takes a float
+	def main(args: Array[String]) { 
+		val input = scala.io.StdIn.readLine("[+] How many values do you have? ") 
+		var array = ArrayBuffer[Float]() 
 
 
-    for(value <- 0 to input.toInt - 1) { // Iterate over the amount of numbers the user wants, aka keep asking for values until initial input value is satisfied
-      val num = scala.io.StdIn.readLine("[+] Enter value #" + (value + 1) + ": ") // Asks for input from user
-      array += num.toFloat // Appends the numbers entered into the array buffer
+		for(value <- 0 to input.toInt - 1) { 
+			val num = scala.io.StdIn.readLine("[+] Enter value #" + (value + 1) + ": ") 
+			array += num.toFloat 
 
-    }
-    println(array.sum / input.toFloat) // Prints the total of the array buffer and divides by the amount of numbers given
+		}
+		var mean = array.sum / input.toFloat
+		println(mean)
 
-  }
+	}
 }
